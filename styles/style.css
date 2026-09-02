@@ -40,7 +40,7 @@ a{
     color: var(--texto);
 }
 img{
-    max-width: 50%;
+    max-width: 100%;
 }
 .container{
     max-width: 120rem;
@@ -61,7 +61,42 @@ h2{
 h3{
     font-size: 2.4;
 }
+
+/** Introduction to BEM: (Block, Element, Modifier) es una metodología y convención de nombres para escribir clases en CSS de forma limpia, modular y fácil de mantener. **/
+
 .header{
     display: flex;
     justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}
+
+.footer{
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__text{
+    text-align: center;
+    font-family: var(--titulos);
+    font-size: 2.2rem;
+}
+
+
+.navigation{
+    background-color: var(--primario-oscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.navigation__link{
+    font-family: var(--subtitulos);
+    color: var(--texto-secundario);
+    font-size: 3rem;
+}   
+.navigation__link--asset,
+.navigation__link:hover{
+    color: var(--secundario);
 }
