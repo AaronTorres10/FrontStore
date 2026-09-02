@@ -1,0 +1,67 @@
+:root {
+    --primario: #0F172A;          /* Azul noche */
+    --primario-oscuro: #020617;   /* Fondo más oscuro */
+
+    --secundario: #2563EB;        /* Azul eléctrico */
+    --secundario-claro: #3B82F6;  /* Hover / detalles */
+
+    --acento: #22D3EE;            /* Cyan */
+
+    --blanco: #FFFFFF;
+    --fondo: #F1F5F9;
+
+    --texto: #1E293B;
+    --texto-secundario: #64748B;
+
+    --card: #FFFFFF;
+
+    --titulos: 'Space Grotesk', sans-serif;
+    --subtitulos: 'Inter', sans-serif;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--fondo);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--texto-secundario);
+}
+a{
+    text-decoration: none;
+    color: var(--texto);
+}
+img{
+    max-width: 50%;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--texto);
+    font-family: var(--titulos);
+
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2;
+}
+h3{
+    font-size: 2.4;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
